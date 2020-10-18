@@ -51,7 +51,7 @@ except NoSuchElementException:
 # Convert the two lists into a dataframe
 dfL = pd.DataFrame(zip(titles_list, prices_list), columns=['ItemName', 'Price'])
 dfL['Price'] = dfL['Price'].str.replace('$', '').astype(float)
-# dfL['Platform'] = 'Lazada'
+dfL['Platform'] = 'Lazada'
 
 # Filters
 #dfL = dfL[dfL['ItemName'].str.contains('x2') == False] # This removes any entry with 'x2' in its title
