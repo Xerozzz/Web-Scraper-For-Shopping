@@ -5,8 +5,7 @@ Web Scraper for Lazada coded using Python. Can be used to scrap Lazada for the b
 <b>Status:</b> Currently in progress
 
 ## Most Recent Release
-## 1.1 (24-10-2020)
-### Release Highlights
+### 1.1 (24-10-2020)
 Version 1.1 includes certain changes which added many features listed below. You can now easily access the exact listing you want as links are also exported. 
 
 Easily filter, sort and search through your listings with Excel functionality! You can sort them by prices, by names, and more. When you find the one you like, just click on the link printed beside it!
