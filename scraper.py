@@ -7,7 +7,7 @@ import pandas as pd
 # Intializing global variables
 webdriver_path = "chromedriver.exe" 
 Lazada_url = 'https://www.lazada.sg/' # Your lazada website URL (Singapore one is used here)
-search_item = '<Fill in>' # Item to search
+search_item = input('Item to search: ') # Item to search
 
 # Select custom Chrome options
 options = webdriver.ChromeOptions()

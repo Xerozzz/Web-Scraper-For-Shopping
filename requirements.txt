@@ -2,3 +2,4 @@ selenium
 pandas
 matplotlib
 seaborn
+openpyxl
