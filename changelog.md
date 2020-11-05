@@ -1,4 +1,9 @@
 # Changelog
+## 1.1.1 (05-11-2020)
+`lazada.py` has also been created to store the code for searching in Lazada. This is to prepare to the near future when Shopee is also rolled out. Each store will have its own python file.
+
+<b>Bugfix:</b> Turns out that during update 1.1, `scraper.py` was not updated and hence the new features were not implemented. It has been updated to reflect it in update 1.1.1.
+
 ## 1.1 (24-10-2020)
 ### Release Highlights
 Version 1.1 includes certain changes which added many features listed below. You can now easily access the exact listing you want as links are also exported. 
