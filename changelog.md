@@ -1,4 +1,15 @@
 # Changelog
+## 2.0 (07-11-2020)
+### Realease Highlights
+Shopee has been added to the scraper!
+
+This uses Shopee's built in API by sending a request to the API with a URL that contains the query search item the user inputs and return the name, price and link of items found. The Shopee results are then thrown into another dataframe and combined with the Lazada dataframe to give the output in an Excel file. Shopee's scraping is done in `shopee.py`. This allows you to have options from Lazada and Shopee to choose from!
+
+### Features
+- Web scraper for Shopee has been added
+- Retrieve over 100 results from Shopee
+- Compare prices from Lazada and Shopee to find the best deal for you
+
 ## 1.1.1 (05-11-2020)
 `lazada.py` has also been created to store the code for searching in Lazada. This is to prepare to the near future when Shopee is also rolled out. Each store will have its own python file.
 
