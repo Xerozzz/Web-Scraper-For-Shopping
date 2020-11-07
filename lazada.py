@@ -4,7 +4,6 @@ from selenium.common.exceptions import *
 # Data manipulation
 import pandas as pd
 
-
 def LazadaSearch(search_item):
     # Intializing global variables
     webdriver_path = "chromedriver.exe" 
@@ -16,6 +15,7 @@ def LazadaSearch(search_item):
     options.add_argument('start-maximized')  
     options.add_argument('disable-infobars')
     options.add_argument('--disable-extensions')
+    options.add_argument('--log-level=OFF')
 
     # Open the Chrome browser
     browser = webdriver.Chrome(webdriver_path, options=options)
@@ -40,4 +40,9 @@ def LazadaSearch(search_item):
     for price in item_prices:
         prices_list.append(price.text)
 
-    return items_list,prices_list,links_list
+    # Convert the two lists into a dataframe
+    lazadaPD = pd.DataFrame(zip(items_list, prices_list, links_list), columns=['ItemName', 'Price ($)','Link'])
+    lazadaPD['Price ($)'] = lazadaPD['Price ($)'].str.replace('$', '').astype(float) # You might need to change "$" into whatever currency symbol is used based on which Lazada you access
+    lazadaPD['Platform'] = 'Lazada'
+
+    return lazadaPD
