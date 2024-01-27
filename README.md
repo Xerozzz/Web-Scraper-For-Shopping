@@ -2,7 +2,7 @@
 Web Scraper for online shops coded using Python. Can be used to scrap platforms for the best prices and for analysis or any uses you have. Uses Google Chrome.
 
 <b>Current Version:</b> 2.0 <br>
-<b>Status:</b> Regularly updated
+<b>Status:</b> No Longer Updated
 
 ## Most Recent Release
 ### 2.0 (07-11-2020)
